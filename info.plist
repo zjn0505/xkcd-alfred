@@ -44,7 +44,7 @@
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>0</integer>
 				<key>keyword</key>
 				<string>xkcd</string>
 				<key>queuedelaycustom</key>
@@ -100,7 +100,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Check and search xkcd comics</string>
 	<key>uidata</key>
 	<dict>
 		<key>3532F786-661D-45B8-87BD-492DCA6978DD</key>
@@ -118,6 +118,8 @@
 			<integer>30</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>1.0.0</string>
 	<key>webaddress</key>
 	<string>jienan.xyz</string>
 </dict>
