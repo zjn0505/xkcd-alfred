@@ -6,4 +6,4 @@ Developed upon [Alfred-Workflow](http://www.deanishe.net/alfred-workflow/), usin
 # Usage
 
 - `xkcd` for most liked comics
-- `xkcd {query}` to do a search on {query}
+- `xkcd {query}` to do a search of `query`
