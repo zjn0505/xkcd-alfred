@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>89330CF1-1564-42B9-B72F-8C1948CB27E3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>CC5D3E35-DEE8-4F84-AE91-990D4893BE90</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>zjn0505</string>
@@ -98,6 +111,53 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>whatif</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching what if...</string>
+				<key>script</key>
+				<string>python whatif.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search what if articles</string>
+				<key>title</key>
+				<string>Search what if</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>89330CF1-1564-42B9-B72F-8C1948CB27E3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Check and search xkcd comics</string>
@@ -106,9 +166,16 @@
 		<key>3532F786-661D-45B8-87BD-492DCA6978DD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>110</integer>
+			<integer>120</integer>
 			<key>ypos</key>
 			<integer>30</integer>
+		</dict>
+		<key>89330CF1-1564-42B9-B72F-8C1948CB27E3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>120</integer>
+			<key>ypos</key>
+			<integer>190</integer>
 		</dict>
 		<key>CC5D3E35-DEE8-4F84-AE91-990D4893BE90</key>
 		<dict>
@@ -119,7 +186,7 @@
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.1.0</string>
+	<string>1.2.0</string>
 	<key>webaddress</key>
 	<string>jienan.xyz</string>
 </dict>
