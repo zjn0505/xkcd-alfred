@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 import sys
-from workflow import Workflow, ICON_WEB, web
+from workflow import Workflow3, ICON_WEB, web
 
 def get_suggestions():
     global query
@@ -51,18 +51,20 @@ def main(wf):
     # Loop through the returned posts and add an item for each to
     # the list of results for Alfred
     for post in posts:
-        wf.add_item(title=("%d - %s" % (post['num'], post['title'])),
+        explainxkcdUrl = "https://explainxkcd.com/{0}".format(post['num']) 
+        it = wf.add_item(title=("%d - %s" % (post['num'], post['title'])),
                 subtitle=post['alt'],
                 arg="https://xkcd.com/%d" % post['num'],
                 valid=True,
                 quicklookurl=post['img'],
                 autocomplete=post['title'],
                 icon=ICON_WEB)
+        it.add_modifier('cmd', subtitle=explainxkcdUrl, arg=explainxkcdUrl, valid=True)
 
     # Send the results to Alfred as XML
     wf.send_feedback()
 
 if __name__ == u"__main__":
-    wf = Workflow()
+    wf = Workflow3()
     log = wf.logger
     sys.exit(wf.run(main))

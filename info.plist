@@ -162,6 +162,7 @@
 
 Use "xkcd" 			for recent and most liked comics
 Use "xkcd {query}" 	to do a search of `query`
+Use "⌘"				to open comics on explainxkcd.com
 Use "whatif" 		for recent and most liked articles
 Use "whatif {query}" 	to do a search of `query`
 Use "⇧" or "⌘`+`Y" 	to quicklook comics or articles</string>
