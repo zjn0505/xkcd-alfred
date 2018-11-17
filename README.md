@@ -9,4 +9,4 @@ Developed upon [Alfred-Workflow](http://www.deanishe.net/alfred-workflow/), usin
 - `xkcd {query}` to do a search of `query`
 - `whatif` for recent and most liked articles
 - `whatif {query}` to do a search of `query`
-- `⇧` or  `⌘`+`Y` to quicklook comics or articles
+- `⇧` or `⌘`+`Y` to quicklook comics or articles

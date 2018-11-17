@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>xyz.jienan.xkcd</string>
-	<key>category</key>
-	<string>Internet</string>
 	<key>connections</key>
 	<dict>
 		<key>3532F786-661D-45B8-87BD-492DCA6978DD</key>
@@ -38,7 +36,7 @@
 	<key>createdby</key>
 	<string>zjn0505</string>
 	<key>description</key>
-	<string>Search xkcd</string>
+	<string>Search xkcd comics and what if articles</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -160,7 +158,13 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Check and search xkcd comics</string>
+	<string>Quick search for xkcd comics and what if articles
+
+Use "xkcd" 			for recent and most liked comics
+Use "xkcd {query}" 	to do a search of `query`
+Use "whatif" 		for recent and most liked articles
+Use "whatif {query}" 	to do a search of `query`
+Use "⇧" or "⌘`+`Y" 	to quicklook comics or articles</string>
 	<key>uidata</key>
 	<dict>
 		<key>3532F786-661D-45B8-87BD-492DCA6978DD</key>
@@ -186,8 +190,8 @@
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.2.0</string>
+	<string>1.2.1</string>
 	<key>webaddress</key>
-	<string>jienan.xyz</string>
+	<string>https://github.com/zjn0505/xkcd-alfred</string>
 </dict>
 </plist>
