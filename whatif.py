@@ -3,15 +3,16 @@
 import sys
 from workflow import Workflow, ICON_WEB, web
 
-query = ""
-
 def get_suggestions():
     global query
     if query == None or query == "":
         url = 'https://api.jienan.xyz/xkcd/what-if-top?size=10&sortby=thumb-up'
     else:
         url = 'https://api.jienan.xyz/xkcd/what-if-suggest?size=10&q=' + query
+
+    url = url.replace(" ", "%20")
     r = web.get(url)
+    log.debug(url)
 
     # throw an error if request failed
     # Workflow will catch this and show it to the user
@@ -63,4 +64,5 @@ def main(wf):
 
 if __name__ == u"__main__":
     wf = Workflow()
+    log = wf.logger
     sys.exit(wf.run(main))
