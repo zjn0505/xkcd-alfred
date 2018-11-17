@@ -57,6 +57,7 @@ def main(wf):
                 arg="https://what-if.xkcd.com/%d" % post['num'],
                 valid=True,
                 # quicklookurl=post['img'],
+                autocomplete=post['title'],
                 icon=ICON_WEB)
 
     # Send the results to Alfred as XML
