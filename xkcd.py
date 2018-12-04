@@ -1,7 +1,12 @@
 # encoding: utf-8
 
 import sys
-from workflow import Workflow3, ICON_WEB, web
+import os
+from workflow import Workflow3, ICON_WEB, ICON_INFO, web
+
+GITHUB_SLUG = 'zjn0505/xkcd-alfred'
+VERSION = open(os.path.join(os.path.dirname(__file__),
+                            'version')).read().strip()
 
 def get_suggestions():
     global query
@@ -65,6 +70,12 @@ def main(wf):
     wf.send_feedback()
 
 if __name__ == u"__main__":
-    wf = Workflow3()
+    update_settings = {'github_slug': GITHUB_SLUG, 'version': VERSION}
+    wf = Workflow3(update_settings=update_settings)
     log = wf.logger
+    if wf.update_available:
+        wf.add_item(u'New version available',
+                    u'Action this item to install the update',
+                    autocomplete=u'workflow:update',
+                    icon=ICON_INFO)
     sys.exit(wf.run(main))

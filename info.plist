@@ -69,7 +69,7 @@
 				<key>runningsubtext</key>
 				<string>Searching xkcd...</string>
 				<key>script</key>
-				<string>python xkcd.py "{query}"</string>
+				<string>python xkcd.py &quot;{query}&quot;</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -135,7 +135,7 @@
 				<key>runningsubtext</key>
 				<string>Searching what if...</string>
 				<key>script</key>
-				<string>python whatif.py "{query}"</string>
+				<string>python whatif.py &quot;{query}&quot;</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -160,12 +160,12 @@
 	<key>readme</key>
 	<string>Quick search for xkcd comics and what if articles
 
-Use "xkcd" 			for recent and most liked comics
-Use "xkcd {query}" 	to do a search of `query`
-Use "⌘"				to open comics on explainxkcd.com
-Use "whatif" 		for recent and most liked articles
-Use "whatif {query}" 	to do a search of `query`
-Use "⇧" or "⌘`+`Y" 	to quicklook comics or articles</string>
+Use &quot;xkcd&quot; 			for recent and most liked comics
+Use &quot;xkcd {query}&quot; 	to do a search of `query`
+Use &quot;⌘&quot;				to open comics on explainxkcd.com
+Use &quot;whatif&quot; 		for recent and most liked articles
+Use &quot;whatif {query}&quot; 	to do a search of `query`
+Use &quot;⇧&quot; or &quot;⌘`+`Y&quot; 	to quicklook comics or articles</string>
 	<key>uidata</key>
 	<dict>
 		<key>3532F786-661D-45B8-87BD-492DCA6978DD</key>
@@ -191,7 +191,7 @@ Use "⇧" or "⌘`+`Y" 	to quicklook comics or articles</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.2.2</string>
+	<string>1.2.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/zjn0505/xkcd-alfred</string>
 </dict>
