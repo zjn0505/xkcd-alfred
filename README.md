@@ -15,9 +15,11 @@ Developed upon [Alfred-Workflow](http://www.deanishe.net/alfred-workflow/), usin
 ## Screenshots
 
 **xkcd search**
+
 ![xkcd search](https://raw.githubusercontent.com/zjn0505/xkcd-alfred/master/art/screenshot%201.png)
 
 **what if recent and most liked**
+
 ![what if recent and most liked](https://raw.githubusercontent.com/zjn0505/xkcd-alfred/master/art/screenshot%202.png)
 
 ## Build dependency
